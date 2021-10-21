@@ -17,7 +17,8 @@ router.get("/", (req, res) => {
 });
 
 router.get("/sneakers/:cat", (req, res) => {
-  res.send("batrgfgr");
+  res.send("bar");
+
 });
 
 router.get("/one-product/:id", (req, res) => {
