@@ -20,11 +20,14 @@ router.get("/", (req, res) => {
 router.get("/sneakers/:cat", async (req, res) => { try {
   console.log("hheeeeeeee")
   console.log(req.params.cat)
+  const gnagna = req.params.cat
   if(req.params.cat === "collection"){
+    
     const sneakers = await SneakerModel.find();
     res.render ("products.hbs", {sneakers})
   } else {
-    const sneakers = await SneakerModel.find( {cat : req.params.cat})
+    
+    const sneakers = await SneakerModel.find({ category : gnagna})
     res.render ("products.hbs", {sneakers})
     
   }
