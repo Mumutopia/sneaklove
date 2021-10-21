@@ -9,12 +9,15 @@ console.log(`\n\n
 -----------------------------\n\n`
 );
 
+
+
+
 router.get("/", (req, res) => {
-  res.send("foo");
+  res.render("index.hbs");
 });
 
 router.get("/sneakers/:cat", (req, res) => {
-  res.send("bar");
+  res.send("batrgfgr");
 });
 
 router.get("/one-product/:id", (req, res) => {
