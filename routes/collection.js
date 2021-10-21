@@ -16,6 +16,6 @@ router.get("/collection", async (req, res, next) => {
 
 // router.get("/collection",  )
 
-router.get("/collection/homme")
+router.get("/collection/home")
 
 module.exports = router;

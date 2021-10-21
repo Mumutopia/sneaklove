@@ -58,6 +58,7 @@ app.use(require("./middlewares/exposeFlashMessage")); // affiche les messages da
 
 // routers
 app.use("/", require("./routes/index"));
+app.use("/", require("./routes/auth"));
 app.use("/", require("./routes/dashboard_sneaker"));
 
 

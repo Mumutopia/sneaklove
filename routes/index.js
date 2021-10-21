@@ -18,8 +18,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/sneakers/:cat", async (req, res) => { try {
-  console.log("hheeeeeeee")
-  console.log(req.params.cat)
+  
   const gnagna = req.params.cat
   if(req.params.cat === "collection"){
     
@@ -45,13 +44,6 @@ router.get("/one-product/:id", (req, res) => {
   res.send("baz");
 });
 
-router.get("/signup", (req, res) => {
-  res.send("sneak");
-});
-
-router.get("/signin", (req, res) => {
-  res.send("love");
-});
 
 
 module.exports = router;
